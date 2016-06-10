@@ -1,3 +1,10 @@
 rcpa/generation/
 *.xhtml
 rcpa/html/_site/icon_profile.png
+*.json
+*.ttl
+*.xml
+rcpa/html/_site/
+*.png
+*.css
+*.gif
