@@ -10,3 +10,5 @@ rcpa/html/fhir.css
 rcpa/html/generation/*.html
 rcpa/html/generation/
 rcpa/html/*.gif
+rcpa/qa/
+rcpa/temp/
