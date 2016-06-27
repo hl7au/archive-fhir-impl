@@ -12,3 +12,4 @@ rcpa/html/generation/
 rcpa/html/*.gif
 rcpa/qa/
 rcpa/temp/
+rcpa/output/
