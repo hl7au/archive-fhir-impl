@@ -13,3 +13,7 @@ rcpa/html/*.gif
 rcpa/qa/
 rcpa/temp/
 rcpa/output/
+base/temp/
+base/qa/fhir.css
+base/output/
+base/qa/
