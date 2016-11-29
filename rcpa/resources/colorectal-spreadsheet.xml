@@ -7,28 +7,31 @@
  xmlns:html="http://www.w3.org/TR/REC-html40">
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Author>Grahame</Author>
-  <LastAuthor>Grahame Grieve</LastAuthor>
+  <LastAuthor>David McKillop</LastAuthor>
   <LastPrinted>2016-09-01T01:29:45Z</LastPrinted>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-11-28T23:14:14Z</LastSaved>
-  <Version>16.00</Version>
+  <LastSaved>2016-11-29T05:16:25Z</LastSaved>
+  <Version>15.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <SupBook>
+   <Path> </Path>
+   <SheetName> </SheetName>
+  </SupBook>
+  <SupBook>
    <Path>\work\subversion\fhir\build\source\colorectal\Archive\Invariants</Path>
    <SheetName>Invariants</SheetName>
   </SupBook>
-  <WindowHeight>11445</WindowHeight>
-  <WindowWidth>24690</WindowWidth>
+  <WindowHeight>8910</WindowHeight>
+  <WindowWidth>22860</WindowWidth>
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>735</TabRatio>
   <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
-  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -1197,6 +1200,14 @@
    <NumberFormat/>
    <Protection/>
   </Style>
+  <Style ss:ID="s227">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
  </Styles>
  <Names>
   <NamedRange ss:Name="Invariantids" ss:RefersTo="=Invariants!R2C1:R15C1"/>
@@ -1471,7 +1482,7 @@
     <Cell><Data ss:Type="String">RCPA code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="35.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="60">
     <Cell ss:StyleID="s87"><Data ss:Type="String">Colorectal</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s88"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1522,7 +1533,7 @@
     <Cell><Data ss:Type="String">17.02.28592</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="90" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="26.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.subject</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><Data ss:Type="String">Patient</Data><NamedCell
@@ -1594,7 +1605,7 @@
     <Cell><Data ss:Type="String">Patient (person)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="90" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="39">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.requester</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1667,7 +1678,7 @@
     <Cell><Data ss:Type="String">Surgeon primary</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="104.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="40.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.performer</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><Data ss:Type="String">Laboratory, Service, Practitioner, Department, Company</Data><NamedCell
@@ -1745,7 +1756,7 @@
     <Cell ss:Index="48"><Data ss:Type="String">23.02.30001</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="56.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1774,8 +1785,8 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for source.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as spa make create(&quot;&quot;Observation&quot;&quot;) as tpa, cdr.result = reference(tpa), tpa.subject = (source.subject), tpa.status = &quot;&quot;final&quot;&quot;, tpa.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;)&quot;"><Data
-      ss:Type="String">for source.preAnalytic : code 0..1 as spa make create(&quot;Observation&quot;) as tpa, cdr.result = reference(tpa), tpa.subject = (source.subject), tpa.status = &quot;final&quot;, tpa.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28592.1000043&quot;)</Data><NamedCell
+     ss:Formula="=&quot;for source.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as spa make create(&quot;&quot;Observation&quot;&quot;) as tpa, cdr.result = reference(tpa), tpa.subject = (source.subject), tpa.status = &quot;&quot;final&quot;&quot;, tpa.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;)&quot;"><Data
+      ss:Type="String">for source.preAnalytic : code 0..1 as spa make create(&quot;Observation&quot;) as tpa, cdr.result = reference(tpa), tpa.subject = (source.subject), tpa.status = &quot;final&quot;, tpa.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28592.1000043&quot;, &quot;Pre Analytic&quot;)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -1803,7 +1814,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28592.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="76.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="40.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.clinicalInformation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1876,7 +1887,7 @@
     <Cell><Data ss:Type="String">17.02.28593</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="51">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.operatingSurgeonDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1931,7 +1942,7 @@
     <Cell ss:StyleID="s73"><Data ss:Type="String">Surgeon primary</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="62.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="81.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.perforation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1974,8 +1985,8 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
-      ss:Type="String">for spa.perforation : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28289.1000043&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/present-absent-ns&quot;, v)</Data><NamedCell
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
+      ss:Type="String">for spa.perforation : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28289.1000043&quot;, &quot;Perforation&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/present-absent-ns&quot;, v)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -2041,8 +2052,8 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">&#10;Query if need to:&#10;add invariant =1 &amp; add the xpath expression to the invariant tab</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
-      ss:Type="String">for spa.natureOfPerforation : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28296.1000043&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/perforation-type&quot;, v)</Data><NamedCell
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
+      ss:Type="String">for spa.natureOfPerforation : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28296.1000043&quot;, &quot;Nature of perforation&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/perforation-type&quot;, v)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -2079,7 +2090,7 @@
     <Cell><Data ss:Type="String">17.02.28296</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="49.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="81">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.clinicalObstruction</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2120,8 +2131,8 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
-      ss:Type="String">for spa.clinicalObstruction : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28292.1000043&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/present-absent-ns&quot;, v)</Data><NamedCell
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
+      ss:Type="String">for spa.clinicalObstruction : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28292.1000043&quot;, &quot;Clinical obstruction&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/present-absent-ns&quot;, v)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -2156,7 +2167,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28292.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="136.3125" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="66.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.tumourLocation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2240,7 +2251,7 @@
     <Cell><Data ss:Type="String">17.02.28347</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="119.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.synchronousTumours</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2272,8 +2283,8 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">? If there needs to be an invariant due to this being conditional on Rectum being selected as site.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
-      ss:Type="String">for spa.synchronousTumours : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28346.1000043&quot;),  obs.value = v</Data><NamedCell
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
+      ss:Type="String">for spa.synchronousTumours : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28346.1000043&quot;, &quot;Synchronous tumours - other site&quot;),  obs.value = v</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -2304,7 +2315,7 @@
     <Cell><Data ss:Type="String">17.02.28346</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="75" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.distanceAnalVerge</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2380,7 +2391,7 @@
     <Cell><Data ss:Type="String">17.02.28335</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="179.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="69.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.typeOfOperation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2444,7 +2455,7 @@
     <Cell><Data ss:Type="String">17.02.27919</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="179.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="22.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.typeOfOperation.code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2522,7 +2533,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">27919.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="28.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="21.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.typeOfOperation.other</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2576,7 +2587,7 @@
     <Cell ss:Index="47" ss:StyleID="s99"><Data ss:Type="Number">27928.100004299999</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="54.75">
+   <Row ss:AutoFitHeight="0" ss:Height="84.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.anteriorResectionType</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2621,7 +2632,8 @@
      ss:Formula="=MID(RC[-30], SEARCH(&quot;^^&quot;,SUBSTITUTE(RC[-30],&quot;.&quot;,&quot;^^&quot;,LEN(RC[-30])-LEN(SUBSTITUTE(RC[-30],&quot;.&quot;,&quot;&quot;))))+1, 50)"><Data
       ss:Type="String">anteriorResectionType</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><Data ss:Type="String">http://cap.org/protocols</Data><NamedCell
+    <Cell ss:StyleID="s121" ss:HRef="http://cap.org/protocols"><Data
+      ss:Type="String">http://cap.org/protocols</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s113" ss:Formula="=RC[14]"><Data ss:Type="String">28278.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2641,7 +2653,7 @@
     <Cell ss:Index="47" ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28278.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="61.3125" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="79.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.preoperativeRadiotherapy</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2687,18 +2699,19 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">? add an invariant to accommodate the conditional statement &quot;if Yes …&quot;</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
-      ss:Type="String">for spa.preoperativeRadiotherapy : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://loinc.org&quot;, &quot;LN-RCPA-00063&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/yes-no-ns&quot;, v)</Data><NamedCell
+    <Cell ss:StyleID="s227"
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = cc(&quot;&quot;&quot;&amp;RC[6]&amp;&quot;&quot;&quot;, v)&quot;"><Data
+      ss:Type="String">for spa.preoperativeRadiotherapy : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://cap.org/protocols&quot;, &quot;28283.1000043&quot;, &quot;Pre-operative radiotherapy&quot;),  obs.value = cc(&quot;http://fhir.hl7.org.au/fhir/rcpa/ValueSet/yes-no-ns&quot;, v)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
      ss:Formula="=MID(RC[-30], SEARCH(&quot;^^&quot;,SUBSTITUTE(RC[-30],&quot;.&quot;,&quot;^^&quot;,LEN(RC[-30])-LEN(SUBSTITUTE(RC[-30],&quot;.&quot;,&quot;&quot;))))+1, 50)"><Data
       ss:Type="String">preoperativeRadiotherapy</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s121" ss:HRef="http://loinc.org/"><Data ss:Type="String">http://loinc.org</Data><NamedCell
+    <Cell ss:StyleID="s121" ss:HRef="http://cap.org/protocols"><Data
+      ss:Type="String">http://cap.org/protocols</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s113" ss:Formula="=RC[12]"><Data ss:Type="String">LN-RCPA-00063</Data><NamedCell
+    <Cell ss:StyleID="s113"><Data ss:Type="String">28283.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s119"><Data ss:Type="String">http://fhir.hl7.org.au/fhir/rcpa/ValueSet/yes-no-ns</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2726,7 +2739,7 @@
     <Cell><Data ss:Type="String">17.02.28283</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="66">
+   <Row ss:AutoFitHeight="0" ss:Height="84">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.typeOfCourse</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2786,7 +2799,7 @@
     <Cell ss:Index="47" ss:StyleID="s99"><Data ss:Type="Number">28286.100004299999</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="49.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="60">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.surgeonsOpinion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2858,7 +2871,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28295.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="48.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="65.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.adjacentOrgans</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2928,7 +2941,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28336.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="77.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="81">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.newPrimaryOrRecurrence</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2994,7 +3007,7 @@
     <Cell><Data ss:Type="String">17.02.28337</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="49.5" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="61.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.RecurrenceDescription</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3027,9 +3040,9 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
-      ss:Type="String">for spa.RecurrenceDescription : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://something&quot;, &quot;sort-this-1&quot;),  obs.value = v</Data><NamedCell
+    <Cell ss:StyleID="s227"
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
+      ss:Type="String">for spa.RecurrenceDescription : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://something&quot;, &quot;sort-this-1&quot;, &quot;Describe&quot;),  obs.value = v</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -3059,7 +3072,7 @@
     <Cell><Data ss:Type="String">23.02.30002</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.pathologyAccessionNumber</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3088,9 +3101,9 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">S1.03</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
-      ss:Type="String">for spa.pathologyAccessionNumber : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://something&quot;, &quot;sort-this-2&quot;),  obs.value = v</Data><NamedCell
+    <Cell ss:StyleID="s227"
+     ss:Formula="=&quot;for spa.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
+      ss:Type="String">for spa.pathologyAccessionNumber : code 0..1 as v make create(&quot;Observation&quot;) as obs, tpa.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://something&quot;, &quot;sort-this-2&quot;, &quot;Pathology accession number&quot;),  obs.value = v</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -3121,7 +3134,7 @@
     <Cell><Data ss:Type="String">17.02.28300</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="31.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="72">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.preAnalytic.otherRelevantDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3184,7 +3197,7 @@
     <Cell><Data ss:Type="String">17.02.28301</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3245,7 +3258,7 @@
     <Cell><Data ss:Type="String">17.02.27906</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="147.75" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="95.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.specimenLength</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3324,7 +3337,7 @@
     <Cell><Data ss:Type="String">17.02.28342</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="135" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="106.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.tumourSite</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3409,7 +3422,7 @@
     <Cell><Data ss:Type="String">17.02.27931</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="30" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="85.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.maxTumourDiameter</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3486,7 +3499,7 @@
     <Cell><Data ss:Type="String">17.02.28360</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="105.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.distanceNearerProxOrDistal</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3567,7 +3580,7 @@
     <Cell><Data ss:Type="String">17.02.28359</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="78">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.distNonperitonCircumMargin</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3641,7 +3654,7 @@
     <Cell><Data ss:Type="String">17.02.28358</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="31.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="82.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.tumourPerforation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3723,7 +3736,7 @@
     <Cell><Data ss:Type="String">17.02.27963</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="75.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="93">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.relToAntPeritonealReflection</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3801,7 +3814,7 @@
     <Cell><Data ss:Type="String">17.02.28362</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="95.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="84.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.intactnessOfMesorectum</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3882,7 +3895,7 @@
     <Cell><Data ss:Type="String">17.02.27967</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="132.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="87.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.peritoneum</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3952,7 +3965,7 @@
     <Cell><Data ss:Type="String">17.02.28369</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="59.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="77.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.lymphNodes</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4026,7 +4039,7 @@
     <Cell><Data ss:Type="String">17.02.28372</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="195.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="71.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.noLymphNodesPerCassette</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4094,7 +4107,7 @@
     <Cell><Data ss:Type="String">17.02.28375</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="81">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.polyps</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4168,7 +4181,7 @@
     <Cell><Data ss:Type="String">17.02.28376</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60">
+   <Row ss:AutoFitHeight="0" ss:Height="83.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.polypSummary</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4230,7 +4243,7 @@
     <Cell><Data ss:Type="String">17.02.28379</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="267.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="71.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.otherMacroComments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4307,7 +4320,7 @@
     <Cell><Data ss:Type="String">17.02.28380</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="278.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.macro.natureAndSiteOfBlocks</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4386,7 +4399,7 @@
     <Cell><Data ss:Type="String">17.02.28381</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="51.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4446,7 +4459,7 @@
     <Cell><Data ss:Type="String">17.02.27973</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="90" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="80.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.tumourType</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4535,7 +4548,7 @@
     <Cell><Data ss:Type="String">17.02.27974</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="66">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.histologicalGrade</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4620,7 +4633,7 @@
     <Cell><Data ss:Type="String">17.02.27988</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="179.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="88.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.maxDegreeLocalInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4795,7 +4808,7 @@
     <Cell><Data ss:Type="String">17.02.28348</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="90.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="66.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.involvedMargins</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4860,7 +4873,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28351.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60">
+   <Row ss:AutoFitHeight="0" ss:Height="63">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.marginsMicroClearance</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5085,7 +5098,7 @@
     <Cell><Data ss:Type="String">17.02.28400</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="165" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="75.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.lymphNodeInvolvement</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5169,7 +5182,7 @@
     <Cell><Data ss:Type="String">17.02.28338</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="115.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="70.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.lymphNodesDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5223,7 +5236,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="Number">28404.100004299999</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="130.3125" ss:Hidden="1">
+   <Row ss:Height="45">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.lymphNodesDetails.site</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5292,7 +5305,7 @@
     <Cell><Data ss:Type="String">17.02.28403&#10;&#10;</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="130.3125" ss:Hidden="1">
+   <Row ss:Height="45">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.lymphNodesDetails.numPos</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5365,7 +5378,7 @@
     <Cell><Data ss:Type="String">17.02.28406</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="130.3125" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.lymphNodesDetails.numExamined</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5436,7 +5449,7 @@
     <Cell><Data ss:Type="String">17.02.28437</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="49.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="81.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.extramuralTumourDeposits</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5516,7 +5529,7 @@
     <Cell><Data ss:Type="String">17.02.28392</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45">
+   <Row ss:AutoFitHeight="0" ss:Height="81.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.apicalNodeInvolvement</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5595,7 +5608,7 @@
     <Cell><Data ss:Type="String">17.02.28407</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="61.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="62.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.venousSmallVesselInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5660,7 +5673,7 @@
     <Cell><Data ss:Type="String">17.02.28411</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="69.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="86.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.intramuralVeinInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5742,7 +5755,7 @@
     <Cell><Data ss:Type="String">17.02.28412</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="57">
+   <Row ss:AutoFitHeight="0" ss:Height="87.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.extramuralVeinInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5824,7 +5837,7 @@
     <Cell><Data ss:Type="String">17.02.28415</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="65.0625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="69">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.smallVesselInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5909,7 +5922,7 @@
     <Cell><Data ss:Type="String">17.02.28418</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="60.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.perineuralInvasion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5997,7 +6010,7 @@
     <Cell><Data ss:Type="String">17.02.28136</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="48" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="81.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.histoConfDistMetastases</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6085,7 +6098,7 @@
     <Cell><Data ss:Type="String">17.02.28236</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="58.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.histoConfDistMetastasesSite</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6150,7 +6163,7 @@
     <Cell><Data ss:Type="String">17.02.28242</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="160.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="64.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.relCoexistPathabnorm</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6216,7 +6229,7 @@
     <Cell ss:StyleID="s118"><Data ss:Type="String">17.02.28244</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="160.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="29.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.relCoexistPathabnorm.code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6263,7 +6276,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">S3.09</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
+    <Cell ss:StyleID="s227"
      ss:Formula="=&quot;for scc.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make tcc.coding = c(&quot;&quot;&quot;&amp;RC[5]&amp;&quot;&quot;&quot;, v)&quot;"><Data
       ss:Type="String">for scc.code : code 0..1 as v make tcc.coding = c(&quot;http://snomed.info/sct&quot;, v)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6300,7 +6313,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="160.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="18">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.relCoexistPathabnorm.other</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6331,7 +6344,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">S3.09</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
+    <Cell ss:StyleID="s227"
      ss:Formula="=&quot;for scc.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make tcc.text = v&quot;"><Data
       ss:Type="String">for scc.other : code 0..1 as v make tcc.text = v</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6360,7 +6373,7 @@
     <Cell><Data ss:Type="String">23.02.30003</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.polypDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6421,7 +6434,7 @@
     <Cell ss:Index="48"><Data ss:Type="String">17.02.28486</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="58.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="78">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.dysplasia</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6482,7 +6495,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="Number">28426.100004299999</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="48" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="67.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.otherAbnormality</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6510,9 +6523,9 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"
-     ss:Formula="=&quot;for smi.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, obs.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
-      ss:Type="String">for smi.otherAbnormality : code 0..1 as v make create(&quot;Observation&quot;) as obs, obs.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://test.what/here&quot;, &quot;something&quot;),  obs.value = v</Data><NamedCell
+    <Cell ss:StyleID="s227"
+     ss:Formula="=&quot;for smi.&quot;&amp;RC[2]&amp;&quot; : code 0..1 as v make create(&quot;&quot;Observation&quot;&quot;) as obs, obs.related as xtmp, xtmp.type=&quot;&quot;has-member&quot;&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;&quot;final&quot;&quot;, obs.code = cc(&quot;&quot;&quot;&amp;RC[3]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[4]&amp;&quot;&quot;&quot;, &quot;&quot;&quot;&amp;RC[-6]&amp;&quot;&quot;&quot;),  obs.value = v&quot;"><Data
+      ss:Type="String">for smi.otherAbnormality : code 0..1 as v make create(&quot;Observation&quot;) as obs, obs.related as xtmp, xtmp.type=&quot;has-member&quot;, xtmp.target = reference(obs), obs.subject = (source.subject), obs.status = &quot;final&quot;, obs.code = cc(&quot;http://test.what/here&quot;, &quot;something&quot;, &quot;Other abnormality&quot;),  obs.value = v</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"
@@ -6538,7 +6551,7 @@
     <Cell ss:StyleID="s73"><Data ss:Type="String">Additional pathological findings</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="61.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="76.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.microResidualTumourStatus</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6614,7 +6627,7 @@
     <Cell><Data ss:Type="String">17.02.28425</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="134.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="93.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.neoadjuvantTherapy</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6692,7 +6705,7 @@
     <Cell><Data ss:Type="String">17.02.28123</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="132.5625" ss:Hidden="1">
+   <Row ss:Height="90">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.micro.microComments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6758,7 +6771,7 @@
     <Cell><Data ss:Type="String">17.02.28431</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="82.3125">
+   <Row ss:Height="75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6819,7 +6832,7 @@
     <Cell><Data ss:Type="String">17.02.28156</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="94.6875" ss:Hidden="1">
+   <Row ss:Height="150">
     <Cell ss:StyleID="s101"><Data ss:Type="String">!Colorectal.ancillaryTests.mismatchRepairEnz</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6874,7 +6887,7 @@
     <Cell><Data ss:Type="String">17.02.28433</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625" ss:Hidden="1">
+   <Row ss:Height="60">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.mlh1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6951,7 +6964,7 @@
     <Cell><Data ss:Type="String">17.02.28434</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45" ss:Hidden="1">
+   <Row ss:Height="60">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.pms2</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7030,7 +7043,7 @@
     <Cell><Data ss:Type="String">17.02.28442</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="43.3125" ss:Hidden="1">
+   <Row ss:Height="60">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msh2</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7107,7 +7120,7 @@
     <Cell><Data ss:Type="String">17.02.28493</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="43.6875" ss:Hidden="1">
+   <Row ss:Height="60">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msh6</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7186,7 +7199,7 @@
     <Cell><Data ss:Type="String">17.02.28544</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="154.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="78">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.comments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7261,7 +7274,7 @@
     <Cell><Data ss:Type="String">17.02.28436</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.3125">
+   <Row ss:AutoFitHeight="0" ss:Height="65.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msi</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7313,7 +7326,7 @@
     <Cell ss:Index="47" ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28399.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.3125" ss:Hidden="1">
+   <Row ss:Height="75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msi.code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7387,7 +7400,7 @@
     <Cell ss:Index="48"><Data ss:Type="String">17.02.28399</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="30">
+   <Row ss:AutoFitHeight="0" ss:Height="59.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msi.comments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7448,7 +7461,7 @@
     <Cell><Data ss:Type="String">17.02.28453</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="60.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.msi.labDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7509,7 +7522,7 @@
     <Cell><Data ss:Type="String">17.02.28447</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="44.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="62.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.braf</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7562,7 +7575,7 @@
     <Cell ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28454.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="44.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="62.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.braf.code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7636,7 +7649,7 @@
     <Cell ss:Index="48"><Data ss:Type="String">17.02.28454</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="28.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="48">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.braf.comments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7696,7 +7709,7 @@
     <Cell><Data ss:Type="String">17.02.28460</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45">
+   <Row ss:AutoFitHeight="0" ss:Height="83.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.braf.labDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7756,7 +7769,7 @@
     <Cell><Data ss:Type="String">17.02.28459</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="61.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.kras</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7810,7 +7823,7 @@
     <Cell ss:Index="47" ss:StyleID="s99"><Data ss:Type="String" x:Ticked="1">28461.1000043</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="45.5625" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="63">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.kras.code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7885,7 +7898,7 @@
     <Cell ss:Index="48"><Data ss:Type="String">17.02.28461</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="52.6875">
+   <Row ss:AutoFitHeight="0" ss:Height="73.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.kras.comments</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7945,7 +7958,7 @@
     <Cell><Data ss:Type="String">17.02.28465</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60.5625">
+   <Row ss:AutoFitHeight="0" ss:Height="75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.ancillaryTests.kras.labDetails</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8005,7 +8018,7 @@
     <Cell><Data ss:Type="String">17.02.28466</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="48">
+   <Row ss:AutoFitHeight="0" ss:Height="49.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8065,7 +8078,7 @@
     <Cell><Data ss:Type="String">17.02.28253</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="21">
     <Cell ss:StyleID="s101"><Data ss:Type="String">!Colorectal.synthesisOverview.tumourStage</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8143,7 +8156,7 @@
     <Cell><Data ss:Type="String">17.02.28204</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="176.4375" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="78.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.tumourStageT</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8227,7 +8240,7 @@
     <Cell><Data ss:Type="String">17.02.28210</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="162" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="81.75">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.tumourStageN</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8389,7 +8402,7 @@
     <Cell><Data ss:Type="String">17.02.28552</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="235.6875" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="65.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.tumourStageGrouping</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8476,7 +8489,7 @@
     <Cell><Data ss:Type="String">17.02.28204</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="46.3125" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="70.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.tumourStagingSystem</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8555,7 +8568,7 @@
     <Cell ss:StyleID="s73"><Data ss:Type="String">AJCC cancer staging manual</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="153" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="35.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.residualTumourStatus</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8639,7 +8652,7 @@
     <Cell><Data ss:Type="String">17.02.28317</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="201" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="67.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.diagnosticSummary</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8714,7 +8727,7 @@
     <Cell><Data ss:Type="String">17.02.28842</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="60">
+   <Row ss:AutoFitHeight="0" ss:Height="79.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.newPrimaryOrRecurrence</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8784,7 +8797,7 @@
     <Cell><Data ss:Type="String">17.02.28472</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="47.4375">
+   <Row ss:AutoFitHeight="0" ss:Height="61.5">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.newDescription</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -8844,7 +8857,7 @@
     <Cell><Data ss:Type="String">23.02.30005</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="93" ss:Hidden="1">
+   <Row ss:AutoFitHeight="0" ss:Height="62.25">
     <Cell ss:StyleID="s101"><Data ss:Type="String">Colorectal.synthesisOverview.overarchingComment</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s91"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -9196,9 +9209,9 @@
    <FrozenNoSplit/>
    <FilterOn/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>72</TopRowBottomPane>
+   <TopRowBottomPane>100</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>22</LeftColumnRightPane>
+   <LeftColumnRightPane>25</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -9214,6 +9227,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
+     <ActiveRow>19</ActiveRow>
      <ActiveCol>28</ActiveCol>
     </Pane>
    </Panes>
@@ -9281,7 +9295,7 @@
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
-   <Range>R59C10:R59C12,R12C11:R12C12,R34C12,R28C14:R33C14,R41C14,R15C14,R49C14,R37C14,R88C5:R89C8,R84C5:R85C8,R12C9,R34C9:R34C10,R13C9:R15C12,R92C5:R112C8,R69C1:R112C4,R69C13:R74C13,R69C5:R81C8,R2C20:R2C42,R106C20:R112C42,R95C34,R3C32:R4C42,R13C32:R14C34,R18C32:R20C33,R45C32:R45C33,R46C32:R51C34,R103C32:R103C33,R98C32:R99C33,R100C32:R102C34,R95C32:R96C33,R97C32:R97C34,R91C32:R91C33,R92C32:R94C34,R87C32:R87C33,R88C32:R90C34,R83C32:R83C33,R84C32:R86C34,R77C32:R80C33,R74C32:R76C34,R81C32:R82C34,R73C32:R73C33,R68C32:R72C34,R63C32:R64C33,R65C32:R65C34,R60C32:R61C33,R62C32:R62C34,R57C32:R58C33,R59C32:R59C34,R52C32:R52C33,R53C32:R56C34,R37C32:R37C33,R38C32:R44C34,R17C32:R17C34,R10C32:R12C33,R2C1:R15C8,R17C1:R66C8,R17C9:R33C12,R104C32:R105C34,R15C32:R16C33,R16C1:R16C14,R66C32:R67C33,R21C32:R36C34,R67C1:R68C13,R76C13:R95C13,R57C15:R57C17,R58C16:R58C18,R61C17,R62C18,R60C16:R60C18,R60C15:R63C15,R63C17:R63C18,R62C16:R64C16,R2C9:R11C12,R2C13:R15C13,R17C13:R66C13,R44C14:R47C14,R4C14:R5C19,R47C15:R47C19,R5C32:R9C34,R5C36:R105C42,R35C9:R49C12,R50C9:R50C11,R51C9:R58C12,R60C9:R66C12,R69C9:R86C12,R88C9:R90C12,R87C9:R87C11,R92C9:R95C12,R91C9:R91C11,R97C9:R97C11,R97C13:R112C13,R52C14:R52C19,R60C14:R61C14,R64C14,R77C14:R80C14,R100C14:R101C19,R98C9:R112C12,R3C20:R105C30</Range>
+   <Range>R59C10:R59C12,R12C11:R12C12,R34C12,R28C14:R33C14,R41C14,R15C14,R49C14,R37C14,R88C5:R89C8,R84C5:R85C8,R12C9,R34C9:R34C10,R13C9:R15C12,R92C5:R112C8,R69C1:R112C4,R69C13:R74C13,R69C5:R81C8,R2C20:R2C42,R106C20:R112C42,R95C34,R3C32:R4C42,R13C32:R14C34,R45C32:R45C33,R46C32:R51C34,R103C32:R103C33,R98C32:R99C33,R100C32:R102C34,R95C32:R96C33,R97C32:R97C34,R91C32:R91C33,R92C32:R94C34,R87C32:R87C33,R88C32:R90C34,R83C32:R83C33,R84C32:R86C34,R77C32:R80C33,R74C32:R76C34,R81C32:R82C34,R73C32:R73C33,R68C32:R72C34,R63C32:R64C33,R65C32:R65C34,R60C32:R61C33,R62C32:R62C34,R57C32:R58C33,R59C32:R59C34,R52C32:R52C33,R53C32:R56C34,R37C32:R37C33,R38C32:R44C34,R17C32:R17C34,R10C32:R12C33,R2C1:R15C8,R17C1:R66C8,R17C9:R33C12,R104C32:R105C34,R15C32:R16C33,R16C1:R16C14,R66C32:R67C33,R21C32:R36C34,R67C1:R68C13,R76C13:R95C13,R57C15:R57C17,R58C16:R58C18,R61C17,R62C18,R60C16:R60C18,R60C15:R63C15,R63C17:R63C18,R62C16:R64C16,R2C9:R11C12,R2C13:R15C13,R17C13:R66C13,R44C14:R47C14,R4C14:R5C19,R47C15:R47C19,R5C32:R9C34,R5C36:R105C42,R35C9:R49C12,R50C9:R50C11,R51C9:R58C12,R60C9:R66C12,R69C9:R86C12,R88C9:R90C12,R87C9:R87C11,R92C9:R95C12,R91C9:R91C11,R97C9:R97C11,R97C13:R112C13,R52C14:R52C19,R60C14:R61C14,R64C14,R77C14:R80C14,R100C14:R101C19,R98C9:R112C12,R3C20:R105C30,R18C32:R18C33,R20C32:R20C33,R19C32</Range>
    <Condition>
     <Value1>RC3=&quot;0..0&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#F2F2F2'/>
@@ -9362,7 +9376,7 @@
    </Condition>
   </ConditionalFormatting>
   <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
-   <Range>R59C10:R59C12,R12C11:R12C12,R34C12,R28C14:R33C14,R41C14,R15C14,R49C14,R37C14,R88C5:R89C8,R84C5:R85C8,R12C9,R34C9:R34C10,R13C9:R15C12,R92C5:R112C8,R69C1:R112C4,R69C13:R74C13,R69C5:R81C8,R2C20:R2C42,R106C20:R112C42,R95C34,R3C32:R4C42,R13C32:R14C34,R18C32:R20C33,R45C32:R45C33,R46C32:R51C34,R103C32:R103C33,R98C32:R99C33,R100C32:R102C34,R95C32:R96C33,R97C32:R97C34,R91C32:R91C33,R92C32:R94C34,R87C32:R87C33,R88C32:R90C34,R83C32:R83C33,R84C32:R86C34,R77C32:R80C33,R74C32:R76C34,R81C32:R82C34,R73C32:R73C33,R68C32:R72C34,R63C32:R64C33,R65C32:R65C34,R60C32:R61C33,R62C32:R62C34,R57C32:R58C33,R59C32:R59C34,R52C32:R52C33,R53C32:R56C34,R37C32:R37C33,R38C32:R44C34,R17C32:R17C34,R10C32:R12C33,R2C1:R15C8,R17C1:R66C8,R17C9:R33C12,R104C32:R105C34,R15C32:R16C33,R16C1:R16C14,R66C32:R67C33,R21C32:R36C34,R67C1:R68C13,R76C13:R95C13,R57C15:R57C17,R58C16:R58C18,R61C17,R62C18,R60C16:R60C18,R60C15:R63C15,R63C17:R63C18,R62C16:R64C16,R2C9:R11C12,R2C13:R15C13,R17C13:R66C13,R44C14:R47C14,R4C14:R5C19,R47C15:R47C19,R5C32:R9C34,R5C36:R105C42,R35C9:R49C12,R50C9:R50C11,R51C9:R58C12,R60C9:R66C12,R69C9:R86C12,R88C9:R90C12,R87C9:R87C11,R92C9:R95C12,R91C9:R91C11,R97C9:R97C11,R97C13:R112C13,R52C14:R52C19,R60C14:R61C14,R64C14,R77C14:R80C14,R100C14:R101C19,R98C9:R112C12,R3C20:R105C30</Range>
+   <Range>R59C10:R59C12,R12C11:R12C12,R34C12,R28C14:R33C14,R41C14,R15C14,R49C14,R37C14,R88C5:R89C8,R84C5:R85C8,R12C9,R34C9:R34C10,R13C9:R15C12,R92C5:R112C8,R69C1:R112C4,R69C13:R74C13,R69C5:R81C8,R2C20:R2C42,R106C20:R112C42,R95C34,R3C32:R4C42,R13C32:R14C34,R45C32:R45C33,R46C32:R51C34,R103C32:R103C33,R98C32:R99C33,R100C32:R102C34,R95C32:R96C33,R97C32:R97C34,R91C32:R91C33,R92C32:R94C34,R87C32:R87C33,R88C32:R90C34,R83C32:R83C33,R84C32:R86C34,R77C32:R80C33,R74C32:R76C34,R81C32:R82C34,R73C32:R73C33,R68C32:R72C34,R63C32:R64C33,R65C32:R65C34,R60C32:R61C33,R62C32:R62C34,R57C32:R58C33,R59C32:R59C34,R52C32:R52C33,R53C32:R56C34,R37C32:R37C33,R38C32:R44C34,R17C32:R17C34,R10C32:R12C33,R2C1:R15C8,R17C1:R66C8,R17C9:R33C12,R104C32:R105C34,R15C32:R16C33,R16C1:R16C14,R66C32:R67C33,R21C32:R36C34,R67C1:R68C13,R76C13:R95C13,R57C15:R57C17,R58C16:R58C18,R61C17,R62C18,R60C16:R60C18,R60C15:R63C15,R63C17:R63C18,R62C16:R64C16,R2C9:R11C12,R2C13:R15C13,R17C13:R66C13,R44C14:R47C14,R4C14:R5C19,R47C15:R47C19,R5C32:R9C34,R5C36:R105C42,R35C9:R49C12,R50C9:R50C11,R51C9:R58C12,R60C9:R66C12,R69C9:R86C12,R88C9:R90C12,R87C9:R87C11,R92C9:R95C12,R91C9:R91C11,R97C9:R97C11,R97C13:R112C13,R52C14:R52C19,R60C14:R61C14,R64C14,R77C14:R80C14,R100C14:R101C19,R98C9:R112C12,R3C20:R105C30,R18C32:R18C33,R20C32:R20C33,R19C32</Range>
    <Condition>
     <Value1>LEFT(RC1,1)=&quot;!&quot;</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:#A5A5A5'/>
@@ -9507,6 +9521,24 @@
    <Condition>
     <Value1>AND(RC&lt;&gt;&quot;&quot;,LEFT(RC5,1)&lt;&gt;&quot;@&quot;,LEFT(R[4]C1,LEN(RC1)+1)&lt;&gt;(RC1&amp;&quot;.&quot;),LEFT(R[4]C1,LEN(RC1)+2)&lt;&gt;(&quot;!&quot;&amp;RC1&amp;&quot;.&quot;))</Value1>
     <Format Style='border:.5pt solid #D8D8D8;background:red'/>
+   </Condition>
+  </ConditionalFormatting>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R19C33</Range>
+   <Condition>
+    <Value1>RC3=&quot;0..0&quot;</Value1>
+    <Format Style='border:.5pt solid #D8D8D8;background:#F2F2F2'/>
+   </Condition>
+   <Condition>
+    <Value1>AND(RC&lt;&gt;&quot;&quot;,RC1=&quot;&quot;)</Value1>
+    <Format Style='border:.5pt solid #D8D8D8;background:red'/>
+   </Condition>
+  </ConditionalFormatting>
+  <ConditionalFormatting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R19C33</Range>
+   <Condition>
+    <Value1>LEFT(RC1,1)=&quot;!&quot;</Value1>
+    <Format Style='border:.5pt solid #D8D8D8;background:#A5A5A5'/>
    </Condition>
   </ConditionalFormatting>
  </Worksheet>
